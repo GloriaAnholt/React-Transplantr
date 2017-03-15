@@ -2,7 +2,7 @@ const express = require('express');
 const requestProxy = require('express-request-proxy');
 
 
-export default function proxyZillow(req, res, next) {
+function proxyZillow(req, res, next) {
   console.log('Routing Zillow request for', req.params[0]);
   requestProxy({
     method: 'GET',
@@ -16,3 +16,5 @@ export default function proxyZillow(req, res, next) {
   })
   next();
 }
+
+module.exports = proxyZillow;

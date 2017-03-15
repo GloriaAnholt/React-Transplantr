@@ -1,0 +1,26 @@
+{
+  "name": "react-transplantr",
+  "version": "0.1.0",
+  "description": ".",
+  "main": "server.js",
+  "scripts": {
+    "test": "exit 0",
+    "start": "node server.js"
+  },
+  "author": "PDX Transplants React Reboot: Gloria Anholt",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-request-proxy": "^1.0.10",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GloriaAnholt/React-Transplantr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GloriaAnholt/React-Transplantr/issues"
+  },
+  "homepage": "https://github.com/GloriaAnholt/React-Transplantr#readme"
+}

@@ -2,7 +2,7 @@ const express = require('express');
 const requestProxy = require('express-request-proxy');
 
 
-export default function proxyCensus(req, res, next) {
+function proxyCensus(req, res, next) {
   console.log('Routing Census request for', req.params);
   requestProxy({
     method: 'GET',
@@ -17,3 +17,5 @@ export default function proxyCensus(req, res, next) {
   })
   next();
 }
+
+module.exports = proxyCensus;
