@@ -1,14 +1,14 @@
 {
   "name": "react-transplantr",
   "version": "0.1.0",
-  "description": ".",
+  "description": "An app which provides economic comparisons between cities based on rental and mortgage data",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "PDX Transplants React Reboot: Gloria Anholt",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",
     "express-request-proxy": "^1.0.10"
