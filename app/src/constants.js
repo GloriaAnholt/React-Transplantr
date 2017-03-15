@@ -52,3 +52,11 @@ export const STATES = [
     "Wyoming",
     "Puerto Rico",
 ];
+
+
+export const BIOS = [
+    { name: "Gloria", src: "img/Gloria.jpg", bio: "is an enthusiastic developer, recovering academic, and eccentric urban homesteader. She got her MA in History of Science from UCLA, and has a lingering penchant for diving deep into the docs or source to understand how things work. When not learning web development, Gloria writes hash tables and obscure sort algorithms in python for fun. Otherwise, she spends her time building custom mason jar shelving, working in her vegetable garden, or adventuring with her husband." },
+    { name: "Mugsy", src: "img/Mugsy.jpg", bio: "is a web developer curently focusing on full-stack Javascript development.  He enjoys spending time with family, backpacking and climbing, ultimate frisbee, and learning new things.  He previously taught high school science and worked in research and development for a drug company." },
+    { name: "Nathan", src: "img/Nathan.jpg", bio: "is a web developer from Portland, Oregon. When not working on code, he loves exploring the outdoors with his partner and dog. Working on personal code projects is a passion of his, as he loves having an outlet for combining code and content he is inspired by." },
+    { name: "Risa", src: "img/Risa.jpg", bio: "is a web developer, photographer, and creative writer from the beautiful Pacific Northwest. She has founded the Western Washington University chapter of Food Recovery Network, the nation's largest student movement against food waste and hunger. Having worked for the Non-GMO Project, Risa is passionate about food and its environmental impact. While she is away from her computer, you can find her writing poetry, hanging out with cats, and exploring Portland's vegan food scene with her partner." }
+];
