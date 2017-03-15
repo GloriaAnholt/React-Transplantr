@@ -28,11 +28,6 @@ export default function IncomeDisplay(props) {
             }
         </div>
     )
-
-    
-
-
-
  }
 
 IncomeDisplay.propTypes = {
@@ -40,4 +35,5 @@ IncomeDisplay.propTypes = {
     medianIncome: PropTypes.number,
     percentPoverty: PropTypes.number,
     county: PropTypes.string,
+    currentCity: PropTypes.string.isRequired
 }      
