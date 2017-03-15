@@ -6,7 +6,7 @@ export default function HousePrices(props) {
         <div>
             <h3>House Prices</h3>
             <p>Median House Price: <strong>{ props.aveHousePrice }</strong></p>
-            <p id="curr-income_to_mortgage"></p>
+            <p>{ props.curr_income_to_mortgage }</p>
             { 
                 props.currentCity ? 
                     <p>We get our house price data from Zillow.com, an online superstore for buying and selling homes.
@@ -21,6 +21,7 @@ export default function HousePrices(props) {
 
 HousePrices.propTypes = {
     aveHousePrice: PropTypes.number,
+    curr_income_to_mortgage: propTypes.string,
     city: PropTypes.string,
-    currentCity: PropTypes.string.isRequired,
+    currentCity: PropTypes.string.isRequired
 }      
