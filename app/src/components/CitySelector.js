@@ -22,8 +22,12 @@ export default function CitySelector(props) {
                 <CountyDropdown location={ props.location } county={ [] }/>
                 <CityDropdown location={ props.location } city={ [] } />
 
-                <label htmlFor="current-income">Current Income:</label>
-                <input type="text" name="current-income" id="current-income" />
+                { ( props.location === 'current' ) &&
+                  <span>
+                    <label htmlFor="current-income">Current Income:</label>
+                    <input type="text" name="current-income" id="current-income" />
+                  </span>  
+                }
               
               </form>
             </div>
