@@ -5,7 +5,7 @@ const proxyZillow = require('./proxy-zillow');
 const proxyCensus = require('./proxy-census');
 
 
-app.use(morgan(dev))
+app.use(morgan('dev'))
 
 if (process.env.NODE_ENV === 'production') {
   app.use((req, res, next) => {
@@ -28,8 +28,8 @@ app.use('/census/:state', proxyCensus);
 app.use(express.static('./'));
 
 app.get('*', (req, res) => {
-  console.log('New request:', request.url);
-  res.sendFile('index.html', {root: '.'});
+  console.log('New request:', req.url);
+  res.sendFile('index.html', {root: '../'});
 });
 
 module.exports = app;
