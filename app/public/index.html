@@ -1,31 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transplantr: The Smarter Way to Move</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
   </head>
+
   <body>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <div class="icon-menu"></div>
+          <li class="link"><a href="/" id="home-link"><span class="branding">Transplantr</span></a></li>
+          <li class="link"><a href="about" id="about-link">About</a></li>
+          <li class="link"><a href="city-data" id="data-link">City Data</a></li>
+          <li class="link"><a href="city-comparison" id="graphs-link">City Comparison</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+      <section>
+        <div class="hero">
+          <h1 id="transplantr" class="tagline">
+          Transplantr: The Smarter Way to Move
+          </h1>
+        </div>
+        <div id="about-page" class="tab-content">
+          <div>
+            <h1>What is Transplantr?</h1>
+            <p><b>Transplantr</b> was built in 2016 to provide Americans with the information they need to relocate. Users must enter their current city and income as well as their destination county and city. From there, Transplantr will compare the user's economic status in their current city to the cost of living in their destination. We've added additional information such as the national average, percent of people in poverty for both locations and the salary they would need to make in order to maintain the same economic status in their destination city.</p>
+          </div>
+          <div>
+            <h1>Why do I need Transplantr?</h1>
+            <p>Over 40 million people move or relocate in the U.S. every year. While popular sites such as <b>Zillow</b> and <b>BestPlaces</b> provide housing and cost of living information, we've made it our mission to provide transplanters with all of the economic information they need in one place. We've decided to add even more information, detailed above. <a href="city-data">Get started today</a>!</p>
+          </div>
+          <hr>
+          <div>
+            <h1>The Developers</h1>
+            <div class ="bio">
+              <p>
+                <img class="headshot" src="img/Gloria.jpg">
+                <b>Gloria</b> is an enthusiastic developer, recovering academic, and eccentric urban homesteader. She got her MA in History of Science from UCLA, and has a lingering penchant for diving deep into the docs or source to understand how things work. When not learning web development, Gloria writes hash tables and obscure sort algorithms in python for fun. Otherwise, she spends her time building custom mason jar shelving, working in her vegetable garden, or adventuring with her husband.</p>
+            </div>
+            <div class ="bio">
+              <p>
+                <img class="headshot" src="img/Mugsy.jpg">
+                <b>Mugsy</b> is a web developer curently focusing on full-stack Javascript development.  He enjoys spending time with family, backpacking and climbing, ultimate frisbee, and learning new things.  He previously taught high school science and worked in research and development for a drug company.</p>
+            </div>
+            <div class ="bio">
+              <p class="bio-text">
+                <img class="headshot" src="img/Nathan.jpg">
+                <b>Nathan</b> is a web developer from Portland, Oregon. When not working on code, he loves exploring the outdoors with his partner and dog. Working on personal code projects is a passion of his, as he loves having an outlet for combining code and content he is inspired by.</p>
+            </div>
+            <div class ="bio">
+              <p>
+                <img class="headshot" src="img/Risa.jpg">
+                <b>Risa</b> is a web developer, photographer, and creative writer from the beautiful Pacific Northwest. She has founded the Western Washington University chapter of Food Recovery Network, the nation's largest student movement against food waste and hunger. Having worked for the Non-GMO Project, Risa is passionate about food and its environmental impact. While she is away from her computer, you can find her writing poetry, hanging out with cats, and exploring Portland's vegan food scene with her partner.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
   </body>
+
 </html>
