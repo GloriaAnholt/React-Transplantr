@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-
+import React, { PropTypes } from 'react';
+import '../../public/styles/modules.css';
 
 export default function RentalMarket(props) {
     return (
-        <div>
+        <div className="comparison-boxes">
             { props.currentCity ?
                 <h3>Your Rental Market</h3> : <h3>Their Rental Market</h3>
             }
@@ -25,5 +25,5 @@ export default function RentalMarket(props) {
 RentalMarket.propTypes = {
     aveHousePrice: PropTypes.number,
     city: PropTypes.string,
-    currentCity: PropTypes.string.isRequired
+    currentCity: PropTypes.string
 }      

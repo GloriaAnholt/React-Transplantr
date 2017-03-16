@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-
+import React, { PropTypes } from 'react';
+import '../../public/styles/modules.css';
 
 export default function IncomeDisplay(props) {
     return (
-        <div>
+        <div className="comparison-boxes">
             <h3>Income</h3>
             <p id={ props.userIncome }></p>
             <p>Median Income: <strong>{ props.medianIncome }</strong> (household)</p>
@@ -31,9 +31,9 @@ export default function IncomeDisplay(props) {
  }
 
 IncomeDisplay.propTypes = {
-    userIncome: PropTypes.number.isRequired,
+    userIncome: PropTypes.number,
     medianIncome: PropTypes.number,
     percentPoverty: PropTypes.number,
     county: PropTypes.string,
-    currentCity: PropTypes.string.isRequired
+    currentCity: PropTypes.string
 }      

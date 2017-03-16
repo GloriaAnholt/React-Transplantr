@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-
+import React, { PropTypes } from 'react';
+import '../../public/styles/modules.css';
 
 export default function HousePrices(props) {
     return (
-        <div>
+        <div className="comparison-boxes">
             <h3>House Prices</h3>
             <p>Median House Price: <strong>{ props.aveHousePrice }</strong></p>
             <p>{ props.curr_income_to_mortgage }</p>
@@ -21,7 +21,7 @@ export default function HousePrices(props) {
 
 HousePrices.propTypes = {
     aveHousePrice: PropTypes.number,
-    curr_income_to_mortgage: propTypes.string,
+    curr_income_to_mortgage: PropTypes.string,
     city: PropTypes.string,
-    currentCity: PropTypes.string.isRequired
+    currentCity: PropTypes.string
 }      

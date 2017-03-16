@@ -1,9 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
 import { STATES } from '../constants';
+import '../../public/styles/modules.css';
+
 
 export default function StateDropdown() {
 
-    console.log('states are ', STATES);
     let states = STATES.map((state, i) => {
         return <option key={i} value={state}>{ state }</option>
     })
@@ -11,7 +12,7 @@ export default function StateDropdown() {
     return (
         <div>
             <label>Choose State:</label>
-            <select>
+            <select className="dropdowns">
                 <option value="">Choose State</option>
                 { states }
             </select>
