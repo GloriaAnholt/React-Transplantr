@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+//import About from './components/About';
+import CitySelector from './components/CitySelector'
 
 
 export default class ReactTransplantr extends Component {
   render() {
     return (
       <div>
-          <h2>Welcome to React</h2>
-          <p>To get started, edit</p>
+          <CitySelector location={"current"} />
+          <CitySelector location={"destination"} />
       </div>
     );
   }
