@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactTransplantr from './ReactTransplantr';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import About from './components/About';
 import './index.css';
 
 ReactDOM.render(
-  <ReactTransplantr />,
+  <BrowserRouter>
+    <div>
+      <Navbar />
+    </div>
+  </BrowserRouter>,
   document.getElementById('root')
 );
