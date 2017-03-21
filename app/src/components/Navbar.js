@@ -15,7 +15,7 @@ export default function Navbar() {
                 <li className="link" id="home-link"><Link to="/"><span className="branding">Transplantr</span></Link></li>
                 <li className="link" id="about-link"><Link to="/about">About</Link></li>
                 <li className="link" id="city-data"><Link to="/city-data">City Data</Link></li>
-                <li className="link" id="graphs-link"><Link to="/city-comparison">City Comparison</Link></li>
+                <li className="link" id="graphs-link"><Link to="/chart-data">Graphical Comparison</Link></li>
                 </ul>
             </nav> 
         </header>
