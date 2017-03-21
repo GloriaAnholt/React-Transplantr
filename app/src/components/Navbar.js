@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import About from './About';
-import CityData from './CityData'
-import Landing from './Landing';
+import { Link } from 'react-router-dom';
 import '../index.css';
 import '../../public/styles/layout.css';
 import '../../public/styles/modules.css';
@@ -15,15 +12,12 @@ export default function Navbar() {
             <nav className="main-nav">
                 <ul>
                 <div className="icon-menu"></div>
-                <Link className="link" id="home-link" to="/"><span className="branding">Transplantr</span></Link>
-                <Link className="link" id="about-link" to="/about">About</Link>
-                <Link className="link" id="city-data" to="/city-data">City Data</Link>
-                <Link className="link" id="graphs-link" to="/city-comparison">City Comparison</Link>
+                <li className="link" id="home-link"><Link to="/"><span className="branding">Transplantr</span></Link></li>
+                <li className="link" id="about-link"><Link to="/about">About</Link></li>
+                <li className="link" id="city-data"><Link to="/city-data">City Data</Link></li>
+                <li className="link" id="graphs-link"><Link to="/city-comparison">City Comparison</Link></li>
                 </ul>
-            </nav>
-            <Route exact path="/" component={Landing} />
-            <Route path="/about" component={About} />
-            <Route path="/city-data" component={CityData} />
+            </nav> 
         </header>
     )
 }
