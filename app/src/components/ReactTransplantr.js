@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-//import About from './components/About';
-import CitySelector from './components/CitySelector'
+import CitySelector from './CitySelector'
 
 
 export default class ReactTransplantr extends Component {
