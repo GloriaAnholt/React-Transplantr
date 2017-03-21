@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CitySelector from './CitySelector'
 
 
-export default class ReactTransplantr extends Component {
+export default class CityData extends Component {
   render() {
     return (
       <div>

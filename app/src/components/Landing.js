@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-import ReactTransplantr from './ReactTransplantr'
+import CityData from './CityData'
 import '../index.css';
 
 export default function Landing() {
@@ -25,7 +25,7 @@ export default function Landing() {
           <Link to="/city-data">
             <button className="get-started-btn">Get Started</button>
           </Link>
-          <Route path="/city-data" component={ReactTransplantr} />
+          <Route path="/city-data" component={CityData} />
           </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import About from './About';
-import ReactTransplantr from './ReactTransplantr'
+import CityData from './CityData'
 import Landing from './Landing';
 import '../index.css';
 import '../../public/styles/layout.css';
@@ -23,7 +23,7 @@ export default function Navbar() {
             </nav>
             <Route exact path="/" component={Landing} />
             <Route path="/about" component={About} />
-            <Route path="/city-data" component={ReactTransplantr} />
+            <Route path="/city-data" component={CityData} />
         </header>
     )
 }
