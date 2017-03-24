@@ -22,6 +22,7 @@ export default class CitySelector extends Component {
       city: []
     };
     this.handleState = this.handleState.bind(this);
+    this.handleCounty = this.handleCounty.bind(this);
   }
 
   handleState(e) {
@@ -31,12 +32,15 @@ export default class CitySelector extends Component {
       }
     })[0];
     let c = COUNTIES[s.name];
-    console.log('counties are: ', c);
     this.setState({
       stateCode: e.target.value,
       stateSelection: s.name,
       counties: c,
     });
+  }
+
+  handleCounty(e) {
+    this.setState({ countySelection: e.target.value })
   }
   
   render() {
@@ -52,6 +56,7 @@ export default class CitySelector extends Component {
               
               <StateDropdown handleState={ this.handleState } value={ this.state.stateCode } />
               <CountyDropdown 
+                  handleCounty={ this.handleCounty }
                   location={ this.props.location } 
                   counties={ this.state.counties } 
                   value={ this.state.countySelection } 
